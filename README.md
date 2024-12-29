@@ -43,7 +43,6 @@ Il progetto è organizzato in diversi file chiave, ognuno con un ruolo specifico
   pipeline:
   - name: cleaner
     type: TextCleaner
-    # type: TestCleaner
 
   - name: extractor
     type: EntityExtractor
