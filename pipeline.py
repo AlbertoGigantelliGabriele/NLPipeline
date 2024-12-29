@@ -1,8 +1,6 @@
 import yaml
 from typing import List, Dict, Any
 from pydantic import BaseModel, ValidationError
-
-# import delle classi
 from validation_models import *
 from components import *
 
