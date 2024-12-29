@@ -55,14 +55,14 @@ class EntityExtractor(BaseModule):
 # region SentimentAnalyzer
 class SentimentAnalyzer(BaseModule):
 
-    def analyze(self, entities: List[str]) -> float:
+    def analyze(self, text: str) -> float:
         # calcola sentiment score (-1 to 1)
         return 0.8
 
     def run(self, input_data: SentimentAnalyzerInput) -> SentimentAnalyzerOutput:
-        entities_ = input_data.entities
+        txt = input_data.text
 
-        return SentimentAnalyzerOutput(score=self.analyze(entities_))
+        return SentimentAnalyzerOutput(score=self.analyze(txt))
 
 
 # endregion

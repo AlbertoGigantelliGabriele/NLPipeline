@@ -27,7 +27,7 @@ class EntityExtractorOutput(BaseModel):
 
 # region SentimentAnalyzer
 class SentimentAnalyzerInput(BaseModel):
-    # text: str
+    text: str
     entities: List[str]
 
 

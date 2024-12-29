@@ -98,6 +98,7 @@ class Pipeline:
                 )
 
             step_output = module_instance.run(step_input)
+            # print(step_output)
             data = step_output
 
         return data

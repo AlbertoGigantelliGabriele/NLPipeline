@@ -4,7 +4,6 @@ from validation_models import TextCleanerInput
 
 
 def main():
-    # Creazione pipeline
     p = Pipeline(config_path="config.yaml")
 
     # Il primo modulo è "TextCleaner", che si aspetta un TextCleanerInput
