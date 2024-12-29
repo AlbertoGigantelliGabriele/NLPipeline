@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1

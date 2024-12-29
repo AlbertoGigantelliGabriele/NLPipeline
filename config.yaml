@@ -1,0 +1,15 @@
+pipeline:
+  - name: cleaner
+    type: TextCleaner
+    # type: TestCleaner
+
+  - name: extractor
+    type: EntityExtractor
+
+  - name: sentiment
+    type: SentimentAnalyzer
+
+  - name: generator
+    type: TextGenerator
+    params:
+      max_length: 100
